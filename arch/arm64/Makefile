@@ -22,6 +22,7 @@ ifeq ($(CONFIG_RELOCATABLE), y)
 LDFLAGS_vmlinux		+= -pie -shared -Bsymbolic \
 			$(call ld-option, --no-apply-dynamic-relocs)
 endif
+KBUILD_CFLAGS += -mno-fix-cortex-a53-843419
 
 KBUILD_DEFCONFIG := defconfig
 
