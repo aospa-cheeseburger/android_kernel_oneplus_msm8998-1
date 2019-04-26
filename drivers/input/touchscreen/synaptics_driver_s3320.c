@@ -55,7 +55,6 @@
 
 #include <linux/input/mt.h>
 
-#include "synaptics_redremote.h"
 #include <linux/project_info.h>
 #include "synaptics_baseline.h"
 
@@ -103,7 +102,7 @@ struct test_header {
 };
 
 /******************for Red function*****************/
-#define CONFIG_SYNAPTIC_RED
+//#define CONFIG_SYNAPTIC_RED
 
 /*********************for gesture*******************/
 #ifdef SUPPORT_GESTURE
