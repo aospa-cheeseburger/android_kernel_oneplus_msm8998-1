@@ -676,6 +676,8 @@ static long sync_fence_ioctl_fence_info(struct sync_fence *fence,
 	if (size > 4096)
 		size = 4096;
 
+	memset(data, 0, size);
+
 	data = kzalloc(size, GFP_KERNEL);
 	if (data == NULL)
 		return -ENOMEM;
